@@ -6,6 +6,15 @@ public class Concierto {
 	protected long id;
 	protected LocalDate fecha;
 	protected LocalDate hora;
+	public Reportero documenta;
+
+	public Reportero getDocumenta() {
+		return documenta;
+	}
+
+	public void setDocumenta(Reportero documenta) {
+		this.documenta = documenta;
+	}
 
 	public Concierto(long id, LocalDate fecha, LocalDate hora) {
 		super();
