@@ -47,6 +47,7 @@ public class Concierto {
 		this.hora = hora;
 	}
 
+	@Override
 	public String toString() {
 		return "Concierto [id= " + id + ",fecha=" + fecha + ", hora=" + hora + "]";
 	}
