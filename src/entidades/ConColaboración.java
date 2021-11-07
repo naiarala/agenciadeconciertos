@@ -1,10 +1,12 @@
 package entidades;
 
-public class ConColaboración {
-	public Actuación forma;
+import java.time.LocalDate;
 
-	public ConColaboración() {
-		forma = new Actuación();
+public class ConColaboración extends Concierto {
+	public Actuación forma = new Actuación();
+
+	public ConColaboración(long id, LocalDate fecha, LocalDate hora) {
+		super(id, fecha, hora);
 	}
 
 }

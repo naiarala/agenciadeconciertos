@@ -7,6 +7,29 @@ public class Concierto {
 	protected LocalDate fecha;
 	protected LocalDate hora;
 	public Reportero documenta;
+	
+	//Método para darle valores a los atributos de cada objeto.
+	public void setid(long i) {
+	id = i;
+	}
+	//Método para que nos diga qué valores hay en cada atributo.
+	public long getid() {
+		return id;		
+	}
+	public void setfecha(LocalDate fecha) {
+	fecha = fecha;
+	}
+	public LocalDate getfecha() {
+		return fecha;		
+	}
+
+	public void sethora(LocalDate hora) {
+	hora = hora;
+	}
+	public LocalDate gethora() {
+		return hora;		
+	}
+
 
 	public Reportero getDocumenta() {
 		return documenta;
