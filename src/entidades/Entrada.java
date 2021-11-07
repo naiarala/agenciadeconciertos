@@ -48,4 +48,8 @@ public class Entrada {
 	public String toString() {
 		return "Entrada [id=" + id + ", precio=" + precio + ", vip=" + vip + "]";
 	}
+
+	public static void Compra() {
+		
+	}
 }

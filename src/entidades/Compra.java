@@ -8,6 +8,9 @@ public class Compra {
 	public String métodopago;
 	
 	public Entrada adquiere;
+	public void Descuento() {
+		Descuento d = new Descuento ();
+	}
 
 	public long getId() {
 		return id;
