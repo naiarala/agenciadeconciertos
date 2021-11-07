@@ -40,5 +40,10 @@ public class Actuación {
 	public void setDuración(String duración) {
 		this.duración = duración;
 	}
+	@Override
+	public String toString() {
+		return "Actuación [id=" + id + ", numsecuencia=" + numsecuencia + ", duración=" + duración + ", interviene="
+				+ interviene + "]";
+	}
 
 }
