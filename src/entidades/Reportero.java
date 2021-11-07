@@ -9,6 +9,8 @@ public class Reportero {
 	private int teléfono;
 	public Concierto documentado;
 	protected boolean datos = true;
+	
+	public Momento captura;
 
 	public Reportero(String nombre, String apellidos, String NIF, int teléfono) {
 		super();
