@@ -8,6 +8,10 @@ public class Concierto {
 	protected LocalDate hora;
 	public Reportero documenta;
 	
+	public void Entrada() {
+		Entrada ent = new Entrada ();
+	}
+	
 	//Método para darle valores a los atributos de cada objeto.
 	public void setid(long i) {
 	id = i;
