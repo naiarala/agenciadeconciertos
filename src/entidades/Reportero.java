@@ -60,26 +60,25 @@ public class Reportero {
 		this.documentado = documentado;
 	}
 
-	public static <Reportero> Reportero newReportero() {
-		Reportero doc = newReportero();
+	public static Reportero newReportero() {
+		Reportero ret = new Reportero();
 		Scanner teclado = new Scanner(System.in);
 		System.out.println("Introduzca el NIF");
 		String NIF = "";
 		NIF = teclado.nextLine();
-		((entidades.Reportero) doc).setNIF(NIF);
-		System.out.println(NIF);
+		ret.setNIF(NIF);
 
 		System.out.println("Introduce el nombre del reportero");
 		String nom = "";
 		nom = teclado.nextLine();
-		((entidades.Reportero) doc).setNombre(nom);
-		System.out.println(nom);
+		ret.setNombre(nom);
 		
 		
 		System.out.println("¿Son correctos los datos? \"true or false\"");
 		boolean s = true;
 		s = teclado.hasNextLine();
-		return doc;		
+		System.out.println(s);
+		return ret;	
 	}
 
 }

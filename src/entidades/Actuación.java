@@ -4,7 +4,19 @@ public class Actuación {
 	private long id;
 	private int numsecuencia;
 	private String duración;
+	
+	public Artista artista;
+	
+	void ensamblar(Artista art) {
+		artista = art;
 
+	}
+	public Artista getArtista() {
+		return artista;
+	}
+	public void setArtista(Artista artista) {
+		this.artista = artista;
+	}
 	public long getId() {
 		return id;
 	}
