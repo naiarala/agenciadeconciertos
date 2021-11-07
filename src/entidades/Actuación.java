@@ -5,17 +5,17 @@ public class Actuación {
 	private int numsecuencia;
 	private String duración;
 	
-	public Artista artista;
+	public Artista interviene;
 	
 	void ensamblar(Artista art) {
-		artista = art;
+		interviene = art;
 
 	}
 	public Artista getArtista() {
-		return artista;
+		return interviene;
 	}
 	public void setArtista(Artista artista) {
-		this.artista = artista;
+		this.interviene = artista;
 	}
 	public long getId() {
 		return id;
