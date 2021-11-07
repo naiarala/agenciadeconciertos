@@ -1,5 +1,6 @@
 package entidades;
 
+
 import java.time.LocalDate;
 
 public class ConColaboración extends Concierto {
@@ -7,6 +8,6 @@ public class ConColaboración extends Concierto {
 
 	public ConColaboración(long id, LocalDate fecha, LocalDate hora) {
 		super(id, fecha, hora);
-	}
 
+	}
 }
