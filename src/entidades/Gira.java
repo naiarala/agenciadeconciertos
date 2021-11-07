@@ -14,6 +14,10 @@ public class Gira {
 	private LocalDate fechadeapertura;
 	private LocalDate fechadecierre;
 	private long id;
+	
+	public void Informe () {
+	Informe i = new Informe ();
+	}
 
 	public Concierto getCompone() {
 		return compone;
