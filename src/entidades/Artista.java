@@ -62,4 +62,8 @@ public class Artista {
 		this.letra = letra;
 
 	}
+	@Override
+	public String toString() {
+		return "Artista [id=" + id + ", nombre=" + nombre + ", géneromúsica=" + géneromúsica + ", letra=" + letra + "]";
+	}
 }

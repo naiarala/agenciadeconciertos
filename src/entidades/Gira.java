@@ -54,5 +54,11 @@ public class Gira {
 	public void setId(long id) {
 		this.id = id;
 	}
+
+	@Override
+	public String toString() {
+		return "Gira [compone=" + compone + ", nombre=" + nombre + ", fechadeapertura=" + fechadeapertura
+				+ ", fechadecierre=" + fechadecierre + ", id=" + id + "]";
+	}
 	
 }
