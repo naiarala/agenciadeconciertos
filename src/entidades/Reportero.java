@@ -8,6 +8,7 @@ public class Reportero {
 	private String NIF;
 	private int teléfono;
 	public Concierto documentado;
+	protected boolean datos = true;
 
 	public Reportero(String nombre, String apellidos, String NIF, int teléfono) {
 		super();
@@ -17,7 +18,6 @@ public class Reportero {
 	}
 
 	public Reportero() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public String getNombre() {
@@ -60,21 +60,26 @@ public class Reportero {
 		this.documentado = documentado;
 	}
 
-	public static Reportero NuevoReportero() {
-		Reportero doc = new Reportero();
+	public static <Reportero> Reportero newReportero() {
+		Reportero doc = newReportero();
 		Scanner teclado = new Scanner(System.in);
-		System.out.println("Introduce el NIF");
+		System.out.println("Introduzca el NIF");
 		String NIF = "";
 		NIF = teclado.nextLine();
-		doc.setNIF(NIF);
+		((entidades.Reportero) doc).setNIF(NIF);
 		System.out.println(NIF);
 
 		System.out.println("Introduce el nombre del reportero");
 		String nom = "";
 		nom = teclado.nextLine();
-		doc.setNombre(nom);
+		((entidades.Reportero) doc).setNombre(nom);
 		System.out.println(nom);
-		return doc;
+		
+		
+		System.out.println("¿Son correctos los datos? \"true or false\"");
+		boolean s = true;
+		s = teclado.hasNextLine();
+		return doc;		
 	}
 
 }
