@@ -7,6 +7,8 @@ public class Entrada {
 	private String precio;
 	private boolean vip = false;
 	
+	public Reserva puedeser;
+	
 	public Compra adquiere;
 
 	public static Entrada newEntrada() {
