@@ -59,6 +59,13 @@ public class Reportero {
 	public void setDocumentado(Concierto documentado) {
 		this.documentado = documentado;
 	}
+	public boolean isDatos() {
+		return datos;
+	}
+
+	public void setDatos(boolean datos) {
+		this.datos = datos;
+	}
 
 	public static Reportero newReportero() {
 		Reportero ret = new Reportero();
@@ -80,6 +87,7 @@ public class Reportero {
 		System.out.println(s);
 		return ret;	
 	}
+
 
 	@Override
 	public String toString() {

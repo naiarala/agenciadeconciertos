@@ -6,6 +6,8 @@ public class Compra {
 	private long id;
 	private int precio;
 	public String métodopago;
+	
+	public Entrada adquiere;
 
 	public long getId() {
 		return id;
